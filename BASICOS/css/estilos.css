@@ -1,7 +1,11 @@
 /*TIPOS DE LETRA*/
 
-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap'); */
 
+/* @import url(fonts.css); */
+
+/* ICONOS */
+@import url(all.min.css);
 
 /*Variables*/
 :root {
@@ -10,9 +14,9 @@
     --fondo-menu: rgb(75, 16, 194);
     --arriba: rgb(255, 252, 55);
     --arriba-borde:  rgb(255, 252, 55) ;
-    --arriba-color:black;
+    --arriba-color:black;  
 
-    --letra: "Afacad Flux", sans-serif;
+    --letra: "Afacade Flux", sans-serif;
     --titulo:' 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif';
     
     --espaciado: 0.5rem;
@@ -45,7 +49,7 @@ a {
 }
 
 
-main{padding: var(--espaciado);}
+main, h3 {padding: var(--espaciado);}
 
 pre{
     overflow: auto;
@@ -118,6 +122,8 @@ h1, body>nav>ul, footer{
 body>nav{
     & ul{
         list-style: none;
+        padding: 0.5rem;
+        
 
         & a{display: inline-block;
             color:var(--fondo);
@@ -158,6 +164,7 @@ button, input[type=submit],input[type=reset] {
 aside {
     background-color: lightgray;
 
+
     & ul{
         list-style: none;
         text-align: center;
@@ -197,6 +204,8 @@ aside {
 /*TABLAS*/
 
 table{
+
+
     & thead{
         background-color: var(--fondo-menu);
         color: var(--fondo);
