@@ -1,3 +1,19 @@
+/*Variables*/
+:root {
+    --tinta: rgb(32, 0, 54);
+    --fondo: whitesmoke;
+    --fondo-menu: rgb(75, 16, 194);
+    --arriba: rgb(255, 252, 55);
+    --arriba-borde:  rgb(255, 252, 55) ;
+    --arriba-color:black;
+
+    --letra: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --titulo:' 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif';
+    
+    --espaciado: 0.5rem;
+}
+
+
 /*RESETEO*/
 
 *{
@@ -5,27 +21,32 @@
 }
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--letra);
     margin: 0;
+    background-color: --fondo;
+    color:var(--tinta)
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--titulo);
 }
 
 a {
     color: rgb(38, 50, 102);
     text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
-a:hover{
-    text-decoration: underline;
-    color: rgb(57, 8, 8);
-}
 
-main{padding: 0.5rem;}
+main{padding: var(--espaciado);}
 
 pre{
     overflow: auto;
 
     background-color: lightgray;
-    padding: 0.5rem;
+    padding: var(--espaciado);
     border-radius: 0.25rem;
 }
 
@@ -50,17 +71,17 @@ table{
     padding-bottom: 100%;
     border: 0;
     margin: 1rem 0;
+
+    & iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
-/*calculo proporcion=calc(16/9*100)*/
-
-.proporcion iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+/*calculo proporcion=calc(9/16*100%)*/
 
 body>nav>ul {
     list-style: none;
@@ -80,27 +101,33 @@ p {
 /* TITULO, MENÚ PRINCIPAL Y PIE*/
 
 h1, body>nav>ul, footer{
-    background-color: black;
-    color: whitesmoke;
+    background-color: var(--fondo-menu);
+    color: var(--fondo);
     margin: 0;
     padding: 1rem;
     text-align: center;
 }
 
 
-body>nav a {
-    display: inline-block;
-    color:whitesmoke;
-    padding: 0.5rem;
-    width: 100%;
-}
 
-body>nav a:hover {
-    text-decoration: none;
-    background-color: white;
-    color: black;
-}
+body>nav{
+    & ul{
+        list-style: none;
 
+        & a{display: inline-block;
+            color:var(--fondo);
+            padding: var(--espaciado);
+            width: 100%;
+
+        }
+
+        & a:hover{
+            text-decoration: none;
+            background-color: var(--fondo);
+            color: var(--tinta);
+        }
+    }
+}
 
 /*FORMULARIOS*/
 
@@ -113,8 +140,8 @@ fieldset, input, button, textarea, select {
 }
 
 fieldset{
-    padding: 0.5rem;
-    margin: 0.5rem 0;
+    padding: var(--espaciado);
+    margin: var(--espaciado) 0;
 }
 
 button, input[type=submit],input[type=reset] {
@@ -125,19 +152,20 @@ button, input[type=submit],input[type=reset] {
 
 aside {
     background-color: lightgray;
+
+    & ul{
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin:0;
+    }
+
+    & li{
+        margin: 0.25rem 0;
+        ;
+    }
 }
 
-aside ul{
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin:0;
-}
-
-aside li{
-    margin: 0.25rem 0;
-    ;
-}
 
 /*PIE*/
 
@@ -150,36 +178,42 @@ aside li{
 #arriba a {
     display: inline-block;
     padding: 0.5rem;
-    background-color: lightcoral;
-    border: 1.5px solid rgb(126, 88, 88);
+    background-color: var(--arriba);
+    border: 2px solid var(--arriba-borde);
     border-radius: 1rem;
-    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.468);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.81);
 
-    color: rgb(62, 31, 31);
+    color: var(--arriba-color);
     text-decoration: none;
 }
 
 
+
 /*TABLAS*/
 
-thead{
-    background-color: black;
-    color: white;
+table{
+    & thead{
+        background-color: var(--fondo-menu);
+        color: var(--fondo);
+    }
+    
+    & tr:nth-child(even){
+        background-color: lightgray;
+    }
+
+    & th, td {
+        border: 1px solid lightgray;
+        padding: 0.25rem 0.5rem;
+    }
+    
+    & th:first-child, td:first-child{
+        text-align: end;
+    }
+
+    & th:not(:first-child), td:not(:first-child) {
+        text-align: start;
+    }
 }
 
-tr:nth-child(even){
-    background-color: lightgray;
-}
 
-th, td {
-    border: 1px solid lightgray;
-    padding: 0.25rem 0.5rem;
-}
 
-th:first-child, td:first-child{
-    text-align: end;
-}
-
-th:not(:first-child), td:not(:first-child) {
-    text-align: start;
-}
