@@ -1,3 +1,8 @@
+/*TIPOS DE LETRA*/
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+
 /*Variables*/
 :root {
     --tinta: rgb(32, 0, 54);
@@ -7,7 +12,7 @@
     --arriba-borde:  rgb(255, 252, 55) ;
     --arriba-color:black;
 
-    --letra: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --letra: "Afacad Flux", sans-serif;
     --titulo:' 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif';
     
     --espaciado: 0.5rem;
