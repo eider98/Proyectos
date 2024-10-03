@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <h1 id="titulo">Crea tu personaje</h1> 
+   <p id="description">En esta pagina web podras crear tu persaneje para la 
+    partida y enviarselo a nuestra master.
+   </p>
+
+   <form id="survey-form" >
+        <fieldset id="'player-data"><legend>Jugador</legend>
+            <label id="player-name-label" for="player-name" >  Name: 
+                <input id="player-name" type="text" placeholder="Enter your name" required>
+            </label>    
+            <label id="email-label" for="email">Email: 
+                <input id="email" type="email" required  placeholder="Enter your email">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personaje</legend>
+            <label id="character-name-label" for="character-name" >  Name: 
+                <input id="character-name" type="text" placeholder="Enter the name of your character" required>
+            </label>    
+            <label id="number-label" for="number">Age: 
+                <input id="number" type="number" min="1"  placeholder="Character age">    
+            </label>
+            <label id="height-label" for="height">Height: 
+                <input id="height" type="number" min="1" max="1000" placeholder="Character height in cm">    
+            </label>
+
+            <fieldset>
+                <legend>Raza y clase:</legend>
+                    <div id="raza"><h4>Raza</h4>
+                        <input type="radio" name="raza" id="orco" value="orco" required checked>
+                        <label for="orco">Medio-orco</label>
+                        <input type="radio" name="raza" id="elfo" value="elfo">  
+                        <label for="elfo">Elfo</label>  
+                        <input type="radio" name="raza" id="humano" value="humano">  
+                        <label for="humano">Humano</label>  
+                        <input type="radio" name="raza" id="enano" value="enano">  
+                        <label for="enano">Enano</label>  
+                        <input type="radio" name="raza" id="gnomo" value="gnomo">  
+                        <label for="gnomo">Gnomo</label>  
+                        <input type="radio" name="raza" id="medio-elfo" value="medio-elfo">  
+                        <label for="medio-elfo">Medio-elfo</label>  
+                        <input type="radio" name="raza" id="dragon-born" value="dragon-born">  
+                        <label for="dragon-born">Dragon-born</label>  
+                        <input type="radio" name="raza" id="tiefling" value="tiefling">  
+                        <label for="tiefling">Tiefling</label> 
+                    </div>
+                      <div id="clase"> <h4>Clase</h4> 
+                        <input type="radio" name="clase" id="barbaro" value="barbaro" checked>  
+                        <label for="barbaro">Barbaro</label>
+                        <input type="radio" name="clase" id="bardo" value="bardo">  
+                        <label for="bardo">Bardo</label>
+                        <input type="radio" name="clase" id="clerigo" value="clerigo">  
+                        <label for="clerigo">Clerigo</label>
+                        <input type="radio" name="clase" id="druida" value="druida">  
+                        <label for="druida">Druida</label>
+                        <input type="radio" name="clase" id="guerrero" value="guerrero">  
+                        <label for="guerrero">Guerrero</label>
+                        <input type="radio" name="clase" id="mago" value="mago">  
+                        <label for="mago">Mago</label>
+                        <input type="radio" name="clase" id="warlock" value="warlock">  
+                        <label for="warlock">Warlock</label>
+                        <input type="radio" name="clase" id="picaro" value="picaro">  
+                        <label for="picaro">Pícaro</label>
+                        <input type="radio" name="clase" id="explorador" value="explorador">  
+                        <label for="explorador">Explorador</label>
+                        <input type="radio" name="clase" id="paladin" value="paladin">  
+                        <label for="paladin">Paladín</label>
+                        <input type="radio" name="clase" id="hechicero" value="hechicero">  
+                        <label for="hechicero">Hechicero</label>
+                    </div>
+                 
+            </fieldset>
+        </fieldset>
+              
+
+   <form id="atributos">
+    <legend>Atributos</legend>
+   </form>
+
+   <label for="imagen">Sube una imagen de tu personaje:</label>
+   <input type="file" id="imagen" required>S
+
+
+</body>
+</html>
