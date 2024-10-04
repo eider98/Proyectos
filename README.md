@@ -5,3 +5,4 @@
 ## BASICO
 - __idex.html__ : primer script con las estructuras básicas de HTML5
 - __Carpeta multimedia__: contiene los archivos de audio, video y imagen para la paágina html
+- __url de la web__: https://eider98.github.io/Proyectos/
