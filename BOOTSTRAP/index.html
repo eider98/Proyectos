@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Ejemplo" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <h1>EJEMPLO HTML</h1>
+    <nav>
+        <ul>
+            <li><a href="#parrafos">Parrafos</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#tablas">Tablas</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#formularios">Formularios</a></li>
+        </ul>
+    </nav>
+
+    <main id="html">
+        <article>
+            <h2>HTML</h2>
+            <section id="parrafos">
+                <h3>Párrafos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, eligendi commodi tempora, iste beatae
+                    est, omnis maiores vero dolorum amet aspernatur temporibus! Incidunt est atque nostrum ducimus
+                    aliquid? Pariatur, tempore?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit eveniet commodi odio quos,
+                    earum voluptatem animi magni, nam, excepturi voluptatum minus. Saepe id laudantium quae fugit
+                    sapiente commodi suscipit cum?</p>
+                <pre>
+lehenengoa
+    bigarrena
+        hirugarrena
+                </pre>
+            </section>
+                <section id="listas">
+                <h3>Listas</h3>
+                <ol>
+                    <li>bat</li>
+                    <li>bi</li>
+                    <li>hiru
+                        <ol>
+                        <li>fs</li>
+        
+                            <li>Kaixo</li>
+                        </ol>
+                    </li>              
+                    
+                    <li>hiru
+                        <ol>
+                            <li>fs</li>
+        
+                            <li>Kaixo</li>
+                        </ol>
+                    </li>
+                
+                </ol>
+            <ul>
+                <li>abc</li>
+                <li>def</li>
+                <li>ghijklmnñopqrst</li>
+                <li>fdnlasls enjafob a</li>
+            </ul>
+            </section>
+        </article>
+    </main>
+
+    <table> 
+        <h3>Tablas</h3>
+        <caption>Tabla de ejemplo</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Eider</td>
+                <td>Aranzabal</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Asier</td>
+                <td>Lopez</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <section id="multimedia">
+        <h3>Multimedia</h3>
+        <!--img src="https://picsum.photos/400/300" alt="Imagen de ejemplo"-->
+        <img src="/multimedia/imgs/html.png" alt="Imagen de prueba sobre htm">
+        <audio src="/multimedia/audios/creative-technology-showreel-241274.mp3 controls"></audio>
+        <video src="/multimedia/videos/html_video.mp4" controls></video>
+        <div class="proporcion">
+            <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.762267202265!2d-2.9135919999999764!3d43.25640399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fb46238d865%3A0xb671edfb1120ab06!2sIpartek%20Servicios%20Inform%C3%A1ticos!5e0!3m2!1ses!2ses!4v1727683341763!5m2!1ses!2ses"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">   
+            </iframe>
+        </div>
+     </section>
+
+    <section id="formularios">
+        <h3>Formularios</h3>
+        
+        <form action="#">
+            <fieldset>
+                <legend>Formulario de login</legend>
+                <div>
+                    <label for="email">Usuario</label>
+                    <input type="correo" id="email">
+                </div>
+
+                <div>
+                    <label for="contra">Contraseña</label>
+                    <input type="password" id="contra">            
+                </div>
+
+                <div>
+                    <button>Login</button>
+                </div>
+        </fieldset>
+        </form>
+
+        <form action="https://www.google.es/search">
+            <fieldset>
+                <legend>Formulario de búsqueda en google</legend>
+                <input type="search" name="q" placeholder="Término a buscar">
+                <button>Buscar</button>
+            </fieldset>
+        </form>
+
+        <form action="#">
+            <fieldset>
+                <legend>Básicos</legend>
+                <input type="text" placeholder="Texto">
+                <input type="checkbox">
+                <input type="radio" name="opcion">
+                <input type="radio" name="opcion">
+
+                <select> 
+                    <option value="1">Uno</option>
+                    <option value="2">Dos</option>
+                    <option value="3">Tres</option>
+                </select>
+
+                <select multiple> 
+                    <option value="1">Uno</option>
+                    <option value="2">Dos</option>
+                    <option value="3">Tres</option>
+                </select>
+
+                <textarea>
+                    fdwgsdgs
+                    gsdhgds
+                    sdfgs
+                </textarea>
+                <input type="submit" >
+            </fieldset>
+            
+            <fieldset>
+                <legend>Nuevos HTML5</legend>
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Telefono">
+                <input type="url" placeholder="URL">
+                <input type="url" placeholder="URL">
+                <input type="number" placeholder="numero">
+                <input type="number" step="0.01" placeholder="numero con decimales">
+                <input type="date" placeholder="fecha">
+                <input type="time" placeholder="hora">
+                <input type="datetime-local" placeholder="fecha y hora">
+                <input type="color">
+                <input type="range" min="1" max="10">
+                <input type="month">
+                <input type="week">
+            </fieldset>
+        </form>
+    </section>
+
+
+    <aside>
+        <!-- nav>ul>li*3>a[href="#"]>{Anuncio $} -->
+        <nav>
+            <ul>
+                <li><a href="#">Anuncio 1</a></li>
+                <li><a href="#">Anuncio 2</a></li>
+                <li><a href="#"><i class="fa-solid fa-facebook"></i></a></li>
+                <li><a href="#">Anuncio 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <footer>
+        <p>&copy;2024 Eider Aranzabal</p>
+        <div id="arriba">
+            <a href="#">Volver arriba</a>
+        </div>
+    </footer>
+</body>
+
+</html>
